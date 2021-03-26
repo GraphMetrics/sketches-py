@@ -11,7 +11,7 @@ from unittest import TestCase
 
 import numpy as np
 
-from datasets import (
+from .datasets import (
     Bimodal,
     Constant,
     EmptyDataset,
