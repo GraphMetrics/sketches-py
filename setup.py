@@ -16,8 +16,12 @@ setuptools.setup(
         "License :: OSI Approved :: Apache Software License",
     ],
     keywords=["ddsketch", "quantile", "sketch"],
-    install_requires=[
-        "numpy>=1.11.0",
-    ],
+    extras_require={
+        "dev": [
+            "numpy>=1.11.0",
+            "black",
+            "codecov",
+        ]
+    },
     python_requires=">=3.6",
 )
