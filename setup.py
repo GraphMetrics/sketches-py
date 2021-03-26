@@ -4,14 +4,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="ddsketch",
-    version="1.1.2",
-    author="Jee Rim, Charles-Philippe Masson, Homin Lee",
-    author_email="jee.rim@datadoghq.com, charles.masson@datadoghq.com, homin@datadoghq.com",
-    description="Distributed quantile sketches",
+    name="sketches-py",
+    version="0.1.0",
+    description="Python implementation of DDSketch, a distributed quantile sketch algorithm",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="http://github.com/datadog/sketches-py",
+    url="http://github.com/GraphMetrics/sketches-py",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -20,8 +18,6 @@ setuptools.setup(
     keywords=["ddsketch", "quantile", "sketch"],
     install_requires=[
         "numpy>=1.11.0",
-        "protobuf>=3.14.0",
     ],
     python_requires=">=3.6",
-    download_url="https://github.com/DataDog/sketches-py/archive/v1.0.tar.gz",
 )
